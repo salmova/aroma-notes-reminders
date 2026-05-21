@@ -3,9 +3,20 @@ name: Monthly content plan reminder
 on:
   schedule:
     # 10:00 Moscow (UTC+3) = 07:00 UTC
-    - cron: '0 7 29 * *'   # 29th of every month (skipped in February — no day 29 in non-leap years)
-    - cron: '0 7 28 2 *'   # 28th of February (covers non-leap years; script de-dupes in leap years)
-  workflow_dispatch: {}    # manual trigger for testing
+    - cron: '0 7 14 * *'   # 14th of every month — remaining posts of current month
+    - cron: '0 7 29 * *'   # 29th of every month — full plan for next month (skipped in Feb)
+    - cron: '0 7 28 2 *'   # 28 Feb — covers non-leap Feb (script de-dupes leap years)
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Что отправить (auto = по дате)'
+        required: false
+        default: 'auto'
+        type: choice
+        options:
+          - auto
+          - next-month
+          - current-remaining
 
 jobs:
   send-reminder:
@@ -26,4 +37,5 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          REMINDER_MODE: ${{ inputs.mode || 'auto' }}
         run: python scripts/send_reminder.py
