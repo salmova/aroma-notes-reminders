@@ -33,7 +33,7 @@
       "title": "Июль 2026",
       "posts": [
         { "date": "1",  "rubric": "Новинки месяца",     "theme": "Цитрусы, чай и морской бриз" },
-        { "date": "5",  "rubric": "Обзор аромата",      "theme": "Tom Ford Soleil Blanc" },
+        { "date": "5",  "rubric": "Обзор аромата",      "theme": "Maison Margiela Lazy Sunday Morning" },
         { "date": "9",  "rubric": "История",            "theme": "Франсуа Коти — человек, изменивший рынок" },
         { "date": "13", "rubric": "Нота месяца",        "theme": "Инжир" },
         { "date": "16", "rubric": "Обзор аромата",      "theme": "Byredo Bal d'Afrique" },
@@ -52,14 +52,15 @@
         { "date": "16", "rubric": "Обзор аромата",      "theme": "Gris Dior" },
         { "date": "19", "rubric": "Парфюмерный дом",    "theme": "Serge Lutens" },
         { "date": "23", "rubric": "Обзор аромата",      "theme": "EX NIHILO Fleur Narcotique" },
-        { "date": "27", "rubric": "Интересный факт",    "theme": "Почему духи в жару пахнут иначе" }
+        { "date": "27", "rubric": "Интересный факт",    "theme": "Почему духи в жару пахнут иначе" },
+        { "date": "30", "rubric": "Обзор аромата",      "theme": "Tom Ford Soleil Blanc" }
       ]
     },
     "2026-09": {
       "title": "Сентябрь 2026",
       "posts": [
         { "date": "1",  "rubric": "Новинки месяца",     "theme": "Осенние запуски 2026" },
-        { "date": "5",  "rubric": "Обзор аромата",      "theme": "Tom Ford Tobacco Vanille" },
+        { "date": "5",  "rubric": "Обзор аромата",      "theme": "" },
         { "date": "9",  "rubric": "История",            "theme": "История IFRA и запретов в парфюмерии" },
         { "date": "13", "rubric": "Нота месяца",        "theme": "Ирис" },
         { "date": "16", "rubric": "Обзор аромата",      "theme": "Portrait of a Lady" },
@@ -104,7 +105,8 @@
         { "date": "16", "rubric": "Обзор аромата",      "theme": "YSL Babycat" },
         { "date": "19", "rubric": "Парфюмерный дом",    "theme": "Jo Malone" },
         { "date": "23", "rubric": "Обзор аромата",      "theme": "Dior Addict" },
-        { "date": "27", "rubric": "Интересный факт",    "theme": "Почему зимой ароматы звучат тише" }
+        { "date": "27", "rubric": "Интересный факт",    "theme": "Почему зимой ароматы звучат тише" },
+        { "date": "30", "rubric": "Обзор аромата",      "theme": "Tom Ford Tobacco Vanille" }
       ]
     },
     "2027-01": {
