@@ -21,11 +21,12 @@
         { "date": "1",  "rubric": "Новинки месяца",     "theme": "Летние новинки 2026" },
         { "date": "5",  "rubric": "Обзор аромата",      "theme": "Diptyque Philosykos" },
         { "date": "9",  "rubric": "История",            "theme": "Грасс — как маленький французский город стал мировой столицей парфюмерии" },
-        { "date": "13", "rubric": "Нота месяца",        "theme": "Пион" },
+        { "date": "12", "rubric": "Нота месяца",        "theme": "Пион" },
         { "date": "16", "rubric": "Обзор аромата",      "theme": "Hermès Un Jardin Sur Le Nil" },
-        { "date": "19", "rubric": "Парфюмерный дом",    "theme": "Diptyque" },
-        { "date": "23", "rubric": "Обзор аромата",      "theme": "Maison Margiela Lazy Sunday Morning" },
-        { "date": "27", "rubric": "Интересный факт",    "theme": "Почему кофе перебивает не все запахи" }
+        { "date": "19", "rubric": "Обзор аромата",      "theme": "Tom Ford Figue Erotique" },
+        { "date": "22", "rubric": "Парфюмерный дом",    "theme": "Diptyque" },
+        { "date": "24", "rubric": "Обзор аромата",      "theme": "Byredo Blanche" },
+        { "date": "26", "rubric": "Интересный факт",    "theme": "Почему кофе перебивает не все запахи" }
       ]
     },
     "2026-07": {
