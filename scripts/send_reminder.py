@@ -40,11 +40,27 @@ def should_skip_today(today: date) -> bool:
 
 def determine_mode(today: date) -> str:
     env_mode = os.environ.get("REMINDER_MODE", "auto").strip().lower()
-    if env_mode in ("next-month", "current-remaining"):
+    if env_mode in ("next-month", "current-remaining", "plan-link"):
         return env_mode
     if today.day == 14:
         return "current-remaining"
     return "next-month"
+
+
+def format_plan_link(plan: dict) -> str:
+    url = plan.get("plan_url", "")
+    total = sum(len(m["posts"]) for m in plan["months"].values())
+    first = next(iter(plan["months"].values()))["title"]
+    last = list(plan["months"].values())[-1]["title"]
+    lines = [
+        "📔 <b>Тетрадь Aroma Notes</b>",
+        "",
+        f"Весь контент-план на одной странице: {html.escape(first)} — {html.escape(last)}, "
+        f"{total} публикаций.",
+        "",
+        f'<a href="{html.escape(url)}">Открыть план</a>',
+    ]
+    return "\n".join(lines)
 
 
 def format_full_month(month_data: dict) -> str:
@@ -115,6 +131,11 @@ def main() -> int:
     token = os.environ["TELEGRAM_BOT_TOKEN"]
     chat_id = os.environ["TELEGRAM_CHAT_ID"]
     plan = json.loads(PLAN_PATH.read_text(encoding="utf-8"))
+
+    if mode == "plan-link":
+        send_telegram(token, chat_id, format_plan_link(plan))
+        print("Sent plan link")
+        return 0
 
     if mode == "current-remaining":
         key = current_month_key(today)

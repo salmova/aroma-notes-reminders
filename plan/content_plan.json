@@ -1,6 +1,7 @@
 {
   "channel": "Aroma Notes",
   "timezone": "Europe/Moscow",
+  "plan_url": "https://claude.ai/code/artifact/dd267319-7e4b-4ba4-b112-2b5771e642bb",
   "cadence": "Каждые 3 дня, воскресенья пропускаем (сдвиг на понедельник). ИСКЛЮЧЕНИЕ: «Новинки месяца» всегда 1-го числа, даже если это воскресенье.",
   "rubrics": [
     "Новинки месяца",

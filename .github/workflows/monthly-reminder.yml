@@ -17,6 +17,7 @@ on:
           - auto
           - next-month
           - current-remaining
+          - plan-link
 
 jobs:
   send-reminder:
