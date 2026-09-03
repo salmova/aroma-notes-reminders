@@ -97,7 +97,7 @@
         { "date": "14",  "rubric": "Нота месяца",          "theme": "Ароматы с нотой ириса" },
         { "date": "17",  "rubric": "История",              "theme": "IFRA и запреты в парфюмерии" },
         { "date": "21",  "rubric": "Похожие ароматы",      "theme": "Чем заменить Le Labo Santal 33: Zara Sandalwood и другие, которые правда близко" },
-        { "date": "24",  "rubric": "Обзор аромата",        "theme": "Frederic Malle Portrait of a Lady" },
+        { "date": "24",  "rubric": "Обзор аромата",        "theme": "Jo Malone Peony & Blush Suede" },
         { "date": "28",  "rubric": "Интересный факт",      "theme": "Сколько лет учится парфюмер и почему в мире их всего ~500" }
       ]
     },
@@ -206,6 +206,7 @@
     "note": "Вытеснено сокращением обзоров с 5 до 3 и чередованием История/Дом. Вернуть при продлении цикла или если формат зайдёт.",
     "ароматы": [
       "Tom Ford Soleil Blanc",
+      "Frederic Malle Portrait of a Lady",
       "Aerin Iris Meadow",
       "Aerin Tangier Vanille",
       "Byredo Super Cedar",
