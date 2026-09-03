@@ -9,7 +9,7 @@
     "История",
     "Парфюмерный дом",
     "Нота месяца",
-    "Дорого / дёшево",
+    "Похожие ароматы",
     "Практический гид",
     "Гардероб",
     "Слоение",
@@ -20,175 +20,175 @@
     "2026-05": {
       "title": "Май 2026",
       "posts": [
-        { "date": "1",  "rubric": "Интересный факт",     "theme": "Дорогой аромат держится дольше дешёвого?" },
-        { "date": "6",  "rubric": "Новинки месяца",      "theme": "Весна 2026. Пять новинок" },
-        { "date": "11", "rubric": "Обзор аромата",       "theme": "Grand Chalet" },
-        { "date": "13", "rubric": "Нота месяца",         "theme": "Ландыши, ландыши" },
-        { "date": "15", "rubric": "Практический гид",    "theme": "Флакон за $200+" },
-        { "date": "17", "rubric": "Подборка под задачу", "theme": "Весенняя распродажа на Randewoo" },
-        { "date": "19", "rubric": "Подборка под задачу", "theme": "Выбираете аромат, который пахнет «как все»?" },
-        { "date": "22", "rubric": "Парфюмерный дом",     "theme": "Восемь ароматов одного дома" },
-        { "date": "25", "rubric": "Обзор аромата",       "theme": "Baccarat Rouge 540" },
-        { "date": "27", "rubric": "Интересный факт",     "theme": "Один и тот же аромат. Два человека" }
+        { "date": "1",   "rubric": "Интересный факт",      "theme": "Дорогой аромат держится дольше дешёвого?" },
+        { "date": "6",   "rubric": "Новинки месяца",       "theme": "Весна 2026. Пять новинок" },
+        { "date": "11",  "rubric": "Обзор аромата",        "theme": "Grand Chalet" },
+        { "date": "13",  "rubric": "Нота месяца",          "theme": "Ландыши, ландыши" },
+        { "date": "15",  "rubric": "Практический гид",     "theme": "Флакон за $200+" },
+        { "date": "17",  "rubric": "Подборка под задачу",  "theme": "Весенняя распродажа на Randewoo" },
+        { "date": "19",  "rubric": "Подборка под задачу",  "theme": "Выбираете аромат, который пахнет «как все»?" },
+        { "date": "22",  "rubric": "Парфюмерный дом",      "theme": "Восемь ароматов одного дома" },
+        { "date": "25",  "rubric": "Обзор аромата",        "theme": "Baccarat Rouge 540" },
+        { "date": "27",  "rubric": "Интересный факт",      "theme": "Один и тот же аромат. Два человека" }
       ]
     },
     "2026-06": {
       "title": "Июнь 2026",
       "posts": [
-        { "date": "1",  "rubric": "Новинки месяца",     "theme": "Летние новинки 2026" },
-        { "date": "5",  "rubric": "Обзор аромата",      "theme": "Diptyque Philosykos" },
-        { "date": "9",  "rubric": "История",            "theme": "Грасс — как маленький французский город стал мировой столицей парфюмерии" },
-        { "date": "12", "rubric": "Нота месяца",        "theme": "Пион" },
-        { "date": "16", "rubric": "Обзор аромата",      "theme": "Hermès Un Jardin Sur Le Nil" },
-        { "date": "19", "rubric": "Обзор аромата",      "theme": "Tom Ford Figue Erotique" },
-        { "date": "22", "rubric": "Парфюмерный дом",    "theme": "Diptyque" },
-        { "date": "24", "rubric": "Обзор аромата",      "theme": "Byredo Blanche" },
-        { "date": "26", "rubric": "Интересный факт",    "theme": "Почему кофе перебивает не все запахи" }
+        { "date": "1",   "rubric": "Новинки месяца",       "theme": "Летние новинки 2026" },
+        { "date": "5",   "rubric": "Обзор аромата",        "theme": "Diptyque Philosykos" },
+        { "date": "9",   "rubric": "История",              "theme": "Грасс — как маленький французский город стал мировой столицей парфюмерии" },
+        { "date": "12",  "rubric": "Нота месяца",          "theme": "Пион" },
+        { "date": "16",  "rubric": "Обзор аромата",        "theme": "Hermès Un Jardin Sur Le Nil" },
+        { "date": "19",  "rubric": "Обзор аромата",        "theme": "Tom Ford Figue Erotique" },
+        { "date": "22",  "rubric": "Парфюмерный дом",      "theme": "Diptyque" },
+        { "date": "24",  "rubric": "Обзор аромата",        "theme": "Byredo Blanche" },
+        { "date": "26",  "rubric": "Интересный факт",      "theme": "Почему кофе перебивает не все запахи" }
       ]
     },
     "2026-07": {
       "title": "Июль 2026",
       "posts": [
-        { "date": "1",  "rubric": "Новинки месяца",     "theme": "Цитрусы, чай и морской бриз" },
-        { "date": "3",  "rubric": "Обзор аромата",      "theme": "Maison Margiela Lazy Sunday Morning" },
-        { "date": "6",  "rubric": "История",            "theme": "Франсуа Коти — человек, изменивший рынок" },
-        { "date": "9",  "rubric": "Обзор аромата",      "theme": "Chanel Chance Eau Fraîche EDP" },
-        { "date": "12", "rubric": "Нота месяца",        "theme": "Инжир" },
-        { "date": "15", "rubric": "Обзор аромата",      "theme": "Chanel Égoïste Platinum" },
-        { "date": "18", "rubric": "Парфюмерный дом",    "theme": "Maison Francis Kurkdjian" },
-        { "date": "21", "rubric": "Обзор аромата",      "theme": "Acqua di Parma Fico di Amalfi" },
-        { "date": "24", "rubric": "Обзор аромата",      "theme": "Byredo Bal d'Afrique" },
-        { "date": "27", "rubric": "Интересный факт",    "theme": "Можно ли «устать» от собственного аромата" }
+        { "date": "1",   "rubric": "Новинки месяца",       "theme": "Цитрусы, чай и морской бриз" },
+        { "date": "3",   "rubric": "Обзор аромата",        "theme": "Maison Margiela Lazy Sunday Morning" },
+        { "date": "6",   "rubric": "История",              "theme": "Франсуа Коти — человек, изменивший рынок" },
+        { "date": "9",   "rubric": "Обзор аромата",        "theme": "Chanel Chance Eau Fraîche EDP" },
+        { "date": "12",  "rubric": "Нота месяца",          "theme": "Инжир" },
+        { "date": "15",  "rubric": "Обзор аромата",        "theme": "Chanel Égoïste Platinum" },
+        { "date": "18",  "rubric": "Парфюмерный дом",      "theme": "Maison Francis Kurkdjian" },
+        { "date": "21",  "rubric": "Обзор аромата",        "theme": "Acqua di Parma Fico di Amalfi" },
+        { "date": "24",  "rubric": "Обзор аромата",        "theme": "Byredo Bal d'Afrique" },
+        { "date": "27",  "rubric": "Интересный факт",      "theme": "Можно ли «устать» от собственного аромата" }
       ]
     },
     "2026-08": {
       "title": "Август 2026",
       "posts": [
-        { "date": "1",  "rubric": "Новинки месяца",     "theme": "Late Summer: фрукты, кожа и солнце" },
-        { "date": "3",  "rubric": "Обзор аромата",      "theme": "Karl Lagerfeld Fleur d'Iris" },
-        { "date": "6",  "rubric": "История",            "theme": "Почему Diorissimo стал революцией" },
-        { "date": "9",  "rubric": "Обзор аромата",      "theme": "Memo Kedu" },
-        { "date": "12", "rubric": "Нота месяца",        "theme": "Кокос" },
-        { "date": "15", "rubric": "Обзор аромата",      "theme": "Gris Dior" },
-        { "date": "18", "rubric": "Парфюмерный дом",    "theme": "Serge Lutens" },
-        { "date": "21", "rubric": "Обзор аромата",      "theme": "EX NIHILO Fleur Narcotique" },
-        { "date": "24", "rubric": "Практический гид",   "theme": "Люкс, ниша, массмаркет, артизаны — разбор категорий" },
-        { "date": "27", "rubric": "Интересный факт",    "theme": "Почему духи в жару пахнут иначе" }
+        { "date": "1",   "rubric": "Новинки месяца",       "theme": "Late Summer: фрукты, кожа и солнце" },
+        { "date": "3",   "rubric": "Обзор аромата",        "theme": "Karl Lagerfeld Fleur d'Iris" },
+        { "date": "6",   "rubric": "История",              "theme": "Почему Diorissimo стал революцией" },
+        { "date": "9",   "rubric": "Обзор аромата",        "theme": "Memo Kedu" },
+        { "date": "12",  "rubric": "Нота месяца",          "theme": "Кокос" },
+        { "date": "15",  "rubric": "Обзор аромата",        "theme": "Gris Dior" },
+        { "date": "18",  "rubric": "Парфюмерный дом",      "theme": "Serge Lutens" },
+        { "date": "21",  "rubric": "Обзор аромата",        "theme": "EX NIHILO Fleur Narcotique" },
+        { "date": "24",  "rubric": "Практический гид",     "theme": "Люкс, ниша, массмаркет, артизаны — разбор категорий" },
+        { "date": "27",  "rubric": "Интересный факт",      "theme": "Почему духи в жару пахнут иначе" }
       ]
     },
     "2026-09": {
       "title": "Сентябрь 2026",
       "posts": [
-        { "date": "1",  "rubric": "Новинки месяца",      "theme": "Август пахнет осенью — новинки" },
-        { "date": "2",  "rubric": "Подборка под задачу", "theme": "Парфюмерный сентябрь: где сейчас хорошие скидки" },
-        { "date": "5",  "rubric": "Обзор аромата",       "theme": "Trussardi Delicate Rose" },
-        { "date": "8",  "rubric": "Практический гид",    "theme": "Парфюм в маршрутке" },
-        { "date": "11", "rubric": "Обзор аромата",       "theme": "Dior Homme Intense" },
-        { "date": "14", "rubric": "Нота месяца",         "theme": "Ароматы с нотой ириса" },
-        { "date": "17", "rubric": "История",             "theme": "IFRA и запреты в парфюмерии" },
-        { "date": "21", "rubric": "Дорого / дёшево",     "theme": "YSL Black Opium → Armaf Club de Nuit Woman" },
-        { "date": "24", "rubric": "Обзор аромата",       "theme": "Frederic Malle Portrait of a Lady" },
-        { "date": "28", "rubric": "Интересный факт",     "theme": "Сколько лет учится парфюмер и почему в мире их всего ~500" }
+        { "date": "1",   "rubric": "Новинки месяца",       "theme": "Август пахнет осенью — новинки" },
+        { "date": "2",   "rubric": "Подборка под задачу",  "theme": "Парфюмерный сентябрь: где сейчас хорошие скидки" },
+        { "date": "5",   "rubric": "Обзор аромата",        "theme": "Trussardi Delicate Rose" },
+        { "date": "8",   "rubric": "Практический гид",     "theme": "Парфюм в маршрутке" },
+        { "date": "11",  "rubric": "Обзор аромата",        "theme": "Dior Homme Intense" },
+        { "date": "14",  "rubric": "Нота месяца",          "theme": "Ароматы с нотой ириса" },
+        { "date": "17",  "rubric": "История",              "theme": "IFRA и запреты в парфюмерии" },
+        { "date": "21",  "rubric": "Похожие ароматы",      "theme": "Если нравится Dior Homme Intense: ирисовая семья — Prada Infusion d'Iris, Chanel №19 Poudré, Serge Lutens Iris Silver Mist" },
+        { "date": "24",  "rubric": "Обзор аромата",        "theme": "Frederic Malle Portrait of a Lady" },
+        { "date": "28",  "rubric": "Интересный факт",      "theme": "Сколько лет учится парфюмер и почему в мире их всего ~500" }
       ]
     },
     "2026-10": {
       "title": "Октябрь 2026",
       "posts": [
-        { "date": "1",  "rubric": "Новинки месяца",      "theme": "Октябрьские новинки: пряности и древесина" },
-        { "date": "5",  "rubric": "Обзор аромата",       "theme": "Tom Ford Black Orchid" },
-        { "date": "8",  "rubric": "История",             "theme": "Как появился первый шипр" },
-        { "date": "12", "rubric": "Дорого / дёшево",     "theme": "Creed Aventus → Armaf Club de Nuit Intense Man" },
-        { "date": "15", "rubric": "Нота месяца",         "theme": "Табак" },
-        { "date": "19", "rubric": "Обзор аромата",       "theme": "Diptyque Tam Dao" },
-        { "date": "22", "rubric": "Гардероб",            "theme": "Осенний гардероб: 3 аромата, которых хватит" },
-        { "date": "26", "rubric": "Интересный факт",     "theme": "Почему мускус раньше был запрещён" },
-        { "date": "29", "rubric": "Обзор аромата",       "theme": "Chanel Sycomore" }
+        { "date": "1",   "rubric": "Новинки месяца",       "theme": "Октябрьские новинки: пряности и древесина" },
+        { "date": "5",   "rubric": "Обзор аромата",        "theme": "Tom Ford Black Orchid" },
+        { "date": "8",   "rubric": "История",              "theme": "Как появился первый шипр" },
+        { "date": "12",  "rubric": "Похожие ароматы",      "theme": "Табачная семья: Tobacco Vanille, Xerjoff Naxos, Mancera Red Tobacco — чем отличаются" },
+        { "date": "15",  "rubric": "Нота месяца",          "theme": "Табак" },
+        { "date": "19",  "rubric": "Обзор аромата",        "theme": "Diptyque Tam Dao" },
+        { "date": "22",  "rubric": "Гардероб",             "theme": "Осенний гардероб: 3 аромата, которых хватит" },
+        { "date": "26",  "rubric": "Интересный факт",      "theme": "Почему мускус раньше был запрещён" },
+        { "date": "29",  "rubric": "Обзор аромата",        "theme": "Chanel Sycomore" }
       ]
     },
     "2026-11": {
       "title": "Ноябрь 2026",
       "posts": [
-        { "date": "1",  "rubric": "Новинки месяца",      "theme": "Гурманика и ваниль" },
-        { "date": "4",  "rubric": "Обзор аромата",       "theme": "Giardini di Toscana Bianco Latte" },
-        { "date": "7",  "rubric": "Парфюмерный дом",     "theme": "Xerjoff" },
-        { "date": "10", "rubric": "Дорого / дёшево",     "theme": "Kilian Love Don't Be Shy → Lattafa Yara" },
-        { "date": "13", "rubric": "Нота месяца",         "theme": "Ваниль" },
-        { "date": "16", "rubric": "Обзор аромата",       "theme": "Kayali Vanilla 28" },
-        { "date": "19", "rubric": "Слоение",             "theme": "Что такое слоение и базовые правила" },
-        { "date": "23", "rubric": "Подборка под задачу", "theme": "5 ароматов до 5000₽, которые не пахнут дёшево" },
-        { "date": "26", "rubric": "Обзор аромата",       "theme": "Nishane Ani" },
-        { "date": "30", "rubric": "Интересный факт",     "theme": "Сколько нот человек реально различает" }
+        { "date": "1",   "rubric": "Новинки месяца",       "theme": "Гурманика и ваниль" },
+        { "date": "4",   "rubric": "Обзор аромата",        "theme": "Giardini di Toscana Bianco Latte" },
+        { "date": "7",   "rubric": "Парфюмерный дом",      "theme": "Xerjoff" },
+        { "date": "10",  "rubric": "Похожие ароматы",      "theme": "Если нравится Bianco Latte: молочно-ванильные — Lattafa Yara, Sol de Janeiro Cheirosa 62, Kayali Vanilla 28" },
+        { "date": "13",  "rubric": "Нота месяца",          "theme": "Ваниль" },
+        { "date": "16",  "rubric": "Обзор аромата",        "theme": "Kayali Vanilla 28" },
+        { "date": "19",  "rubric": "Слоение",              "theme": "Что такое слоение и базовые правила" },
+        { "date": "23",  "rubric": "Подборка под задачу",  "theme": "5 ароматов до 5000₽, которые не пахнут дёшево" },
+        { "date": "26",  "rubric": "Обзор аромата",        "theme": "Nishane Ani" },
+        { "date": "30",  "rubric": "Интересный факт",      "theme": "Сколько нот человек реально различает" }
       ]
     },
     "2026-12": {
       "title": "Декабрь 2026",
       "posts": [
-        { "date": "1",  "rubric": "Новинки месяца",      "theme": "Праздничные лимитки" },
-        { "date": "4",  "rubric": "Обзор аромата",       "theme": "Kilian Apple Brandy" },
-        { "date": "7",  "rubric": "История",             "theme": "Парфюмерия при дворе Людовика XIV" },
-        { "date": "10", "rubric": "Дорого / дёшево",     "theme": "MFK Grand Soir → Lattafa Khamrah" },
-        { "date": "14", "rubric": "Нота месяца",         "theme": "Корица" },
-        { "date": "17", "rubric": "Обзор аромата",       "theme": "YSL Babycat" },
-        { "date": "21", "rubric": "Практический гид",    "theme": "Как выбрать аромат в подарок" },
-        { "date": "24", "rubric": "Подборка под задачу", "theme": "Что подарить на Новый год — по бюджетам" },
-        { "date": "28", "rubric": "Обзор аромата",       "theme": "Tom Ford Tobacco Vanille" },
-        { "date": "31", "rubric": "Интересный факт",     "theme": "Почему зимой ароматы звучат тише" }
+        { "date": "1",   "rubric": "Новинки месяца",       "theme": "Праздничные лимитки" },
+        { "date": "4",   "rubric": "Обзор аромата",        "theme": "Kilian Apple Brandy" },
+        { "date": "7",   "rubric": "История",              "theme": "Парфюмерия при дворе Людовика XIV" },
+        { "date": "10",  "rubric": "Похожие ароматы",      "theme": "Гурманы с алкогольной ноткой: Kilian Apple Brandy, Angels' Share, Xerjoff Naxos" },
+        { "date": "14",  "rubric": "Нота месяца",          "theme": "Корица" },
+        { "date": "17",  "rubric": "Обзор аромата",        "theme": "YSL Babycat" },
+        { "date": "21",  "rubric": "Практический гид",     "theme": "Как выбрать аромат в подарок" },
+        { "date": "24",  "rubric": "Подборка под задачу",  "theme": "Что подарить на Новый год — по бюджетам" },
+        { "date": "28",  "rubric": "Обзор аромата",        "theme": "Tom Ford Tobacco Vanille" },
+        { "date": "31",  "rubric": "Интересный факт",      "theme": "Почему зимой ароматы звучат тише" }
       ]
     },
     "2027-01": {
       "title": "Январь 2027",
       "posts": [
-        { "date": "1",  "rubric": "Новинки месяца",      "theme": "Парфюмерный старт 2027" },
-        { "date": "4",  "rubric": "Обзор аромата",       "theme": "Tiziana Terenzi Cassiopea" },
-        { "date": "7",  "rubric": "Парфюмерный дом",     "theme": "Amouage" },
-        { "date": "11", "rubric": "Дорого / дёшево",     "theme": "Le Labo Santal 33 → бюджетные сандаловые аналоги" },
-        { "date": "14", "rubric": "Нота месяца",         "theme": "Миндаль" },
-        { "date": "18", "rubric": "Обзор аромата",       "theme": "Hermès Barénia Intense" },
-        { "date": "21", "rubric": "Гардероб",            "theme": "Базовый гардероб из 3 ароматов" },
-        { "date": "25", "rubric": "Подборка под задачу", "theme": "Ароматы для собеседования и офиса" },
-        { "date": "28", "rubric": "Обзор аромата",       "theme": "Parfums de Marly Layton" }
+        { "date": "1",   "rubric": "Новинки месяца",       "theme": "Парфюмерный старт 2027" },
+        { "date": "4",   "rubric": "Обзор аромата",        "theme": "Tiziana Terenzi Cassiopea" },
+        { "date": "7",   "rubric": "Парфюмерный дом",      "theme": "Amouage" },
+        { "date": "11",  "rubric": "Похожие ароматы",      "theme": "Сандаловая семья: Le Labo Santal 33, Diptyque Tam Dao, Byredo Super Cedar" },
+        { "date": "14",  "rubric": "Нота месяца",          "theme": "Миндаль" },
+        { "date": "18",  "rubric": "Обзор аромата",        "theme": "Hermès Barénia Intense" },
+        { "date": "21",  "rubric": "Гардероб",             "theme": "Базовый гардероб из 3 ароматов" },
+        { "date": "25",  "rubric": "Подборка под задачу",  "theme": "Ароматы для собеседования и офиса" },
+        { "date": "28",  "rubric": "Обзор аромата",        "theme": "Parfums de Marly Layton" }
       ]
     },
     "2027-02": {
       "title": "Февраль 2027",
       "posts": [
-        { "date": "1",  "rubric": "Новинки месяца",      "theme": "Инновации и необычные форматы" },
-        { "date": "4",  "rubric": "Обзор аромата",       "theme": "Giorgio Armani Sì Passione Red Musk" },
-        { "date": "8",  "rubric": "История",             "theme": "Альдегиды: случайность, изменившая индустрию" },
-        { "date": "11", "rubric": "Нота месяца",         "theme": "Вишня" },
-        { "date": "15", "rubric": "Дорого / дёшево",     "theme": "Chanel Coco Mademoiselle → Zara Black Amber" },
-        { "date": "18", "rubric": "Обзор аромата",       "theme": "Givenchy Irresistible Nectar" },
-        { "date": "22", "rubric": "Слоение",             "theme": "5 проверенных сочетаний, которые работают" },
-        { "date": "25", "rubric": "Подборка под задачу", "theme": "Ароматы для свидания" },
-        { "date": "27", "rubric": "Обзор аромата",       "theme": "Tiziana Terenzi White Fire" }
+        { "date": "1",   "rubric": "Новинки месяца",       "theme": "Инновации и необычные форматы" },
+        { "date": "4",   "rubric": "Обзор аромата",        "theme": "Giorgio Armani Sì Passione Red Musk" },
+        { "date": "8",   "rubric": "История",              "theme": "Альдегиды: случайность, изменившая индустрию" },
+        { "date": "11",  "rubric": "Нота месяца",          "theme": "Вишня" },
+        { "date": "15",  "rubric": "Похожие ароматы",      "theme": "Вишнёвая семья: чем Lost Cherry отличается от Kayali Yum Cherry и Mancera Instant Crush" },
+        { "date": "18",  "rubric": "Обзор аромата",        "theme": "Givenchy Irresistible Nectar" },
+        { "date": "22",  "rubric": "Слоение",              "theme": "5 проверенных сочетаний, которые работают" },
+        { "date": "25",  "rubric": "Подборка под задачу",  "theme": "Ароматы для свидания" },
+        { "date": "27",  "rubric": "Обзор аромата",        "theme": "Tiziana Terenzi White Fire" }
       ]
     },
     "2027-03": {
       "title": "Март 2027",
       "posts": [
-        { "date": "1",  "rubric": "Новинки месяца",      "theme": "Весенние цветочные релизы" },
-        { "date": "4",  "rubric": "Обзор аромата",       "theme": "Lacoste L.12.12 Silver Rose" },
-        { "date": "8",  "rubric": "Парфюмерный дом",     "theme": "Le Labo" },
-        { "date": "11", "rubric": "Дорого / дёшево",     "theme": "Byredo Gypsy Water → Zara Nomade" },
-        { "date": "15", "rubric": "Нота месяца",         "theme": "Фиалка" },
-        { "date": "18", "rubric": "Обзор аромата",       "theme": "Tiziana Terenzi Afrodite" },
-        { "date": "22", "rubric": "Практический гид",    "theme": "Как читать пирамиду нот (и почему она врёт)" },
-        { "date": "25", "rubric": "Интересный факт",     "theme": "Как парфюм влияет на память" },
-        { "date": "29", "rubric": "Обзор аромата",       "theme": "Marc-Antoine Barrois Ganymède" }
+        { "date": "1",   "rubric": "Новинки месяца",       "theme": "Весенние цветочные релизы" },
+        { "date": "4",   "rubric": "Обзор аромата",        "theme": "Lacoste L.12.12 Silver Rose" },
+        { "date": "8",   "rubric": "Парфюмерный дом",      "theme": "Le Labo" },
+        { "date": "11",  "rubric": "Похожие ароматы",      "theme": "Свежие розы: Lacoste Silver Rose, Byredo Rose of No Man's Land, Diptyque Eau Rose" },
+        { "date": "15",  "rubric": "Нота месяца",          "theme": "Фиалка" },
+        { "date": "18",  "rubric": "Обзор аромата",        "theme": "Tiziana Terenzi Afrodite" },
+        { "date": "22",  "rubric": "Практический гид",     "theme": "Как читать пирамиду нот (и почему она врёт)" },
+        { "date": "25",  "rubric": "Интересный факт",      "theme": "Как парфюм влияет на память" },
+        { "date": "29",  "rubric": "Обзор аромата",        "theme": "Marc-Antoine Barrois Ganymède" }
       ]
     },
     "2027-04": {
       "title": "Апрель 2027",
       "posts": [
-        { "date": "1",  "rubric": "Новинки месяца",      "theme": "Зелёные и акватические ароматы" },
-        { "date": "5",  "rubric": "Обзор аромата",       "theme": "Mugler Aura" },
-        { "date": "8",  "rubric": "История",             "theme": "Vent Vert Balmain (1947) — как родился «зелёный» аромат" },
-        { "date": "12", "rubric": "Дорого / дёшево",     "theme": "Dior Sauvage → Lattafa Asad" },
-        { "date": "15", "rubric": "Нота месяца",         "theme": "Зелёный чай" },
-        { "date": "19", "rubric": "Обзор аромата",       "theme": "Atelier Cologne Pomélo Paradis" },
-        { "date": "22", "rubric": "Гардероб",            "theme": "Гардероб путешественника — что брать в отпуск" },
-        { "date": "26", "rubric": "Подборка под задачу", "theme": "Для тех, кто ненавидит сладкое" },
-        { "date": "29", "rubric": "Обзор аромата",       "theme": "Issey Miyake L'Eau d'Issey" }
+        { "date": "1",   "rubric": "Новинки месяца",       "theme": "Зелёные и акватические ароматы" },
+        { "date": "5",   "rubric": "Обзор аромата",        "theme": "Mugler Aura" },
+        { "date": "8",   "rubric": "История",              "theme": "Vent Vert Balmain (1947) — как родился «зелёный» аромат" },
+        { "date": "12",  "rubric": "Похожие ароматы",      "theme": "Акватическая семья: Cool Water, Acqua di Giò Profumo, L'Eau d'Issey — кто у кого учился" },
+        { "date": "15",  "rubric": "Нота месяца",          "theme": "Зелёный чай" },
+        { "date": "19",  "rubric": "Обзор аромата",        "theme": "Atelier Cologne Pomélo Paradis" },
+        { "date": "22",  "rubric": "Гардероб",             "theme": "Гардероб путешественника — что брать в отпуск" },
+        { "date": "26",  "rubric": "Подборка под задачу",  "theme": "Для тех, кто ненавидит сладкое" },
+        { "date": "29",  "rubric": "Обзор аромата",        "theme": "Issey Miyake L'Eau d'Issey" }
       ]
     }
   },
@@ -215,7 +215,13 @@
       "Hermès Eau d'Orange Verte",
       "Atelier Cologne Clémentine California"
     ],
-    "дома": ["Penhaligon's", "Jo Malone", "Kilian Paris", "Frederic Malle", "Parfums de Marly"],
+    "дома": [
+      "Penhaligon's",
+      "Jo Malone",
+      "Kilian Paris",
+      "Frederic Malle",
+      "Parfums de Marly"
+    ],
     "истории": [
       "Мюглер и Angel: рождение гурманики",
       "Как нишевая парфюмерия стала мейнстримом",
@@ -232,7 +238,7 @@
       "Нишевые, которые реально стоят своих денег",
       "Весенний гардероб под настроение"
     ],
-    "дорого_дёшево": [
+    "похожие_ароматы": [
       "Tom Ford Lost Cherry → Zara Cherry Smoothie (снято: обзор Lost Cherry уже был 17.12.2025)",
       "Baccarat Rouge 540 и его двойники — Armaf Club de Nuit Milestone, Zara Red Vanilla (снято: отдельный обзор BR540 был 25.05.2026, пусть отлежится до следующего цикла)"
     ]
