@@ -1,0 +1,696 @@
+<title>Тетрадь Aroma Notes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap">
+
+<style>
+:root {
+  /* ground: perfumer's bench paper — cool-warm neutral, green bias */
+  --ground:      #E9E7E0;
+  --ground-deep: #DEDBD2;
+  --surface:     #FCFBF8;
+  --surface-2:   #F4F2EC;
+  --rule:        #D6D2C7;
+  --rule-soft:   #E3E0D7;
+
+  --ink:         #1E1C19;
+  --ink-mid:     #565248;
+  --ink-soft:    #837D70;
+
+  /* amber glass — raw-material bottle; marks the new useful rubrics */
+  --amber:       #A9622C;
+  --amber-wash:  #F0E2D5;
+  /* iris root — fragrance reviews */
+  --iris:        #665D7D;
+  --iris-wash:   #E6E2EC;
+  /* vetiver — educational rubrics */
+  --vetiver:     #55684E;
+  --vetiver-wash:#E1E8DE;
+  /* ink — the fixed monthly anchor */
+  --anchor:      #33302A;
+  --anchor-wash: #E2DFD6;
+  /* text sitting on a filled bar segment */
+  --on-fill:     #FCFBF8;
+
+  --shadow: 0 1px 2px rgba(30,28,25,.05), 0 8px 24px -12px rgba(30,28,25,.14);
+
+  --serif: "Bodoni Moda", "Didot", "Times New Roman", serif;
+  --sans:  "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono:  "IBM Plex Mono", "SFMono-Regular", Menlo, monospace;
+
+  --measure: 66ch;
+  --pad: clamp(1.1rem, 4vw, 2.75rem);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground:      #15140F;
+    --ground-deep: #100F0B;
+    --surface:     #1E1C17;
+    --surface-2:   #26241E;
+    --rule:        #38352C;
+    --rule-soft:   #2C2A23;
+
+    --ink:         #EFEBE0;
+    --ink-mid:     #ACA595;
+    --ink-soft:    #8A8474;
+
+    --amber:       #D8965A;
+    --amber-wash:  #3A2A1B;
+    --iris:        #A79BC6;
+    --iris-wash:   #292539;
+    --vetiver:     #8FAC84;
+    --vetiver-wash:#222B1F;
+    --anchor:      #CFC9BA;
+    --anchor-wash: #2B2820;
+    --on-fill:     #15140F;
+
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 28px -14px rgba(0,0,0,.7);
+  }
+}
+
+:root[data-theme="dark"] {
+  --ground:      #15140F;
+  --ground-deep: #100F0B;
+  --surface:     #1E1C17;
+  --surface-2:   #26241E;
+  --rule:        #38352C;
+  --rule-soft:   #2C2A23;
+
+  --ink:         #EFEBE0;
+  --ink-mid:     #ACA595;
+  --ink-soft:    #8A8474;
+
+  --amber:       #D8965A;
+  --amber-wash:  #3A2A1B;
+  --iris:        #A79BC6;
+  --iris-wash:   #292539;
+  --vetiver:     #8FAC84;
+  --vetiver-wash:#222B1F;
+  --anchor:      #CFC9BA;
+  --anchor-wash: #2B2820;
+  --on-fill:     #15140F;
+
+  --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 28px -14px rgba(0,0,0,.7);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 var(--pad) 5rem; }
+
+/* ---------- masthead ---------- */
+
+.masthead {
+  padding: clamp(2.5rem, 7vw, 4.75rem) 0 clamp(1.5rem, 4vw, 2.5rem);
+  border-bottom: 1px solid var(--rule);
+  display: grid;
+  gap: 1.75rem;
+}
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: .7rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+h1 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(2.6rem, 8vw, 4.6rem);
+  line-height: 1.02;
+  letter-spacing: -.015em;
+  margin: 0;
+  text-wrap: balance;
+}
+h1 em {
+  font-style: italic;
+  color: var(--amber);
+}
+
+.standfirst {
+  margin: 0;
+  max-width: var(--measure);
+  font-size: 1.03rem;
+  color: var(--ink-mid);
+}
+
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem 2.5rem;
+  padding-top: .35rem;
+}
+.fact { display: grid; gap: .1rem; }
+.fact dt {
+  font-family: var(--mono);
+  font-size: .66rem;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.fact dd {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: 1.15rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- rebalance ---------- */
+
+.shift {
+  margin-top: 2.75rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: minmax(0, 1fr);
+}
+@media (min-width: 860px) {
+  .shift { grid-template-columns: minmax(0, 15rem) minmax(0, 1fr); gap: 2.5rem; align-items: start; }
+}
+
+h2 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 1.15;
+  margin: 0 0 .4rem;
+  letter-spacing: -.01em;
+}
+.shift p { margin: 0; color: var(--ink-mid); font-size: .92rem; }
+
+.bars { display: grid; gap: 1.15rem; }
+.bar-row { display: grid; gap: .4rem; }
+.bar-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  font-family: var(--mono);
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.bar-head b { color: var(--ink); font-weight: 500; }
+.bar {
+  display: flex;
+  height: 2.4rem;
+  border-radius: 2px;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+}
+.seg {
+  display: grid;
+  place-items: center;
+  font-family: var(--mono);
+  font-size: .78rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--on-fill);
+  min-width: 0;
+}
+.seg-anchor  { background: var(--anchor); }
+.seg-review  { background: var(--iris); }
+.seg-know    { background: var(--vetiver); }
+.seg-useful  { background: var(--amber); }
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem 1.35rem;
+  margin-top: .35rem;
+  font-size: .82rem;
+  color: var(--ink-mid);
+}
+.legend span { display: inline-flex; align-items: center; gap: .45rem; }
+.swatch { width: .7rem; height: .7rem; border-radius: 1px; flex: none; }
+
+/* ---------- month rail ---------- */
+
+.rail {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--ground);
+  background: color-mix(in srgb, var(--ground) 92%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--rule);
+  margin-top: 3rem;
+}
+.rail-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: .6rem var(--pad);
+  display: flex;
+  gap: .3rem;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+.rail a {
+  flex: none;
+  font-family: var(--mono);
+  font-size: .74rem;
+  letter-spacing: .04em;
+  text-decoration: none;
+  color: var(--ink-mid);
+  padding: .32rem .6rem;
+  border-radius: 2px;
+  white-space: nowrap;
+  border: 1px solid transparent;
+}
+.rail a:hover { background: var(--surface-2); color: var(--ink); }
+.rail a.done { color: var(--ink-soft); }
+.rail a.now {
+  color: var(--amber);
+  border-color: var(--amber);
+  font-weight: 600;
+}
+.rail a:focus-visible { outline: 2px solid var(--amber); outline-offset: 1px; }
+
+/* ---------- months ---------- */
+
+.months {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+  grid-template-columns: minmax(0, 1fr);
+}
+@media (min-width: 900px) {
+  .months { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem 1.5rem; }
+}
+
+.month {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 1.2rem 1.25rem 1rem;
+  scroll-margin-top: 4rem;
+  box-shadow: var(--shadow);
+}
+.month.past { background: transparent; box-shadow: none; border-color: var(--rule-soft); }
+.month.current { border-color: var(--amber); }
+
+.month-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: .7rem;
+  margin-bottom: .25rem;
+  border-bottom: 1px solid var(--rule-soft);
+}
+.month-head h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 0;
+  letter-spacing: -.01em;
+}
+.month.past .month-head h3 { color: var(--ink-mid); }
+.month-meta {
+  font-family: var(--mono);
+  font-size: .68rem;
+  letter-spacing: .06em;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.posts { list-style: none; margin: 0; padding: 0; }
+
+.post {
+  display: grid;
+  grid-template-columns: 3.35rem minmax(0, 1fr);
+  gap: .1rem .75rem;
+  padding: .55rem 0;
+  border-bottom: 1px solid var(--rule-soft);
+  align-items: baseline;
+}
+.post:last-child { border-bottom: 0; }
+.post.done { opacity: .5; }
+
+.when {
+  font-family: var(--mono);
+  font-size: .82rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+  display: flex;
+  align-items: baseline;
+  gap: .3rem;
+}
+.post.done .when { color: var(--ink-soft); }
+.dow {
+  font-size: .62rem;
+  color: var(--ink-soft);
+  text-transform: lowercase;
+  letter-spacing: .03em;
+}
+.dow.sun { color: var(--amber); font-weight: 600; }
+
+.body-cell { min-width: 0; display: grid; gap: .15rem; }
+
+.tag {
+  justify-self: start;
+  font-family: var(--mono);
+  font-size: .62rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  padding: .1rem .38rem;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+.tag-anchor { color: var(--anchor); background: var(--anchor-wash); }
+.tag-review { color: var(--iris);   background: var(--iris-wash); }
+.tag-know   { color: var(--vetiver);background: var(--vetiver-wash); }
+.tag-useful { color: var(--amber);  background: var(--amber-wash); font-weight: 600; }
+
+.theme { font-size: .93rem; line-height: 1.4; overflow-wrap: anywhere; }
+.post.done .theme { color: var(--ink-mid); }
+.theme .new-flag {
+  font-family: var(--mono);
+  font-size: .58rem;
+  letter-spacing: .1em;
+  color: var(--amber);
+  vertical-align: .3em;
+  margin-left: .3rem;
+}
+
+/* ---------- reserve ---------- */
+
+.reserve { margin-top: 4rem; padding-top: 2.25rem; border-top: 1px solid var(--rule); }
+.reserve > p { max-width: var(--measure); color: var(--ink-mid); margin: .1rem 0 2rem; font-size: .92rem; }
+
+.shelf {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: minmax(0, 1fr);
+}
+@media (min-width: 700px) { .shelf { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem 2rem; } }
+@media (min-width: 1000px) { .shelf { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+
+.shelf section { display: grid; gap: .55rem; align-content: start; }
+.shelf h4 {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: .68rem;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  padding-bottom: .45rem;
+  border-bottom: 1px solid var(--rule);
+  display: flex;
+  justify-content: space-between;
+}
+.shelf h4 b { color: var(--ink-mid); font-weight: 500; }
+.shelf ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .3rem; }
+.shelf li { font-size: .86rem; color: var(--ink-mid); line-height: 1.35; }
+
+/* ---------- colophon ---------- */
+
+.colophon {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem 2rem;
+  font-family: var(--mono);
+  font-size: .7rem;
+  letter-spacing: .05em;
+  color: var(--ink-soft);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+html { scroll-behavior: smooth; }
+</style>
+
+<script type="application/json" id="plan-data">
+{"months":{"2026-05":{"title":"Май 2026","posts":[{"date":"1","rubric":"Новинки месяца","theme":"Белые цветы и чистые мускусы"},{"date":"9","rubric":"История","theme":"Почему CK One стал символом 90-х"},{"date":"13","rubric":"Нота месяца","theme":"Ландыш"},{"date":"19","rubric":"Парфюмерный дом","theme":"Byredo"},{"date":"23","rubric":"Обзор аромата","theme":"Baccarat Rouge 540"},{"date":"27","rubric":"Интересный факт","theme":"Почему один и тот же аромат «старит» и «молодит» одновременно"}]},"2026-06":{"title":"Июнь 2026","posts":[{"date":"1","rubric":"Новинки месяца","theme":"Летние новинки 2026"},{"date":"5","rubric":"Обзор аромата","theme":"Diptyque Philosykos"},{"date":"9","rubric":"История","theme":"Грасс — как маленький французский город стал мировой столицей парфюмерии"},{"date":"12","rubric":"Нота месяца","theme":"Пион"},{"date":"16","rubric":"Обзор аромата","theme":"Hermès Un Jardin Sur Le Nil"},{"date":"19","rubric":"Обзор аромата","theme":"Tom Ford Figue Erotique"},{"date":"22","rubric":"Парфюмерный дом","theme":"Diptyque"},{"date":"24","rubric":"Обзор аромата","theme":"Byredo Blanche"},{"date":"26","rubric":"Интересный факт","theme":"Почему кофе перебивает не все запахи"}]},"2026-07":{"title":"Июль 2026","posts":[{"date":"1","rubric":"Новинки месяца","theme":"Цитрусы, чай и морской бриз"},{"date":"3","rubric":"Обзор аромата","theme":"Maison Margiela Lazy Sunday Morning"},{"date":"6","rubric":"История","theme":"Франсуа Коти — человек, изменивший рынок"},{"date":"9","rubric":"Обзор аромата","theme":"Chanel Chance Eau Fraîche EDP"},{"date":"12","rubric":"Нота месяца","theme":"Инжир"},{"date":"15","rubric":"Обзор аромата","theme":"Chanel Égoïste Platinum"},{"date":"18","rubric":"Парфюмерный дом","theme":"Maison Francis Kurkdjian"},{"date":"21","rubric":"Обзор аромата","theme":"Acqua di Parma Fico di Amalfi"},{"date":"24","rubric":"Обзор аромата","theme":"Byredo Bal d'Afrique"},{"date":"27","rubric":"Интересный факт","theme":"Можно ли «устать» от собственного аромата"}]},"2026-08":{"title":"Август 2026","posts":[{"date":"1","rubric":"Новинки месяца","theme":"Late Summer: фрукты, кожа и солнце"},{"date":"3","rubric":"Обзор аромата","theme":"Karl Lagerfeld Fleur d'Iris"},{"date":"6","rubric":"История","theme":"Почему Diorissimo стал революцией"},{"date":"9","rubric":"Обзор аромата","theme":"Memo Kedu"},{"date":"12","rubric":"Нота месяца","theme":"Кокос"},{"date":"15","rubric":"Обзор аромата","theme":"Gris Dior"},{"date":"18","rubric":"Парфюмерный дом","theme":"Serge Lutens"},{"date":"21","rubric":"Обзор аромата","theme":"EX NIHILO Fleur Narcotique"},{"date":"24","rubric":"Практический гид","theme":"Люкс, ниша, массмаркет, артизаны — разбор категорий"},{"date":"27","rubric":"Интересный факт","theme":"Почему духи в жару пахнут иначе"}]},"2026-09":{"title":"Сентябрь 2026","posts":[{"date":"1","rubric":"Новинки месяца","theme":"Август пахнет осенью — новинки"},{"date":"2","rubric":"Подборка под задачу","theme":"Парфюмерный сентябрь: где сейчас хорошие скидки"},{"date":"5","rubric":"Обзор аромата","theme":"Trussardi Delicate Rose"},{"date":"8","rubric":"Практический гид","theme":"Парфюм в маршрутке"},{"date":"11","rubric":"Обзор аромата","theme":"Dior Homme Intense"},{"date":"14","rubric":"Нота месяца","theme":"Ароматы с нотой ириса"},{"date":"17","rubric":"История","theme":"IFRA и запреты в парфюмерии"},{"date":"21","rubric":"Дорого / дёшево","theme":"Baccarat Rouge 540 и его двойники — Armaf Club de Nuit Milestone, Zara Red Vanilla"},{"date":"24","rubric":"Обзор аромата","theme":"Frederic Malle Portrait of a Lady"},{"date":"28","rubric":"Подборка под задачу","theme":"5 ароматов, за которые чаще всего делают комплименты"}]},"2026-10":{"title":"Октябрь 2026","posts":[{"date":"1","rubric":"Новинки месяца","theme":"Октябрьские новинки: пряности и древесина"},{"date":"5","rubric":"Обзор аромата","theme":"Tom Ford Black Orchid"},{"date":"8","rubric":"История","theme":"Как появился первый шипр"},{"date":"12","rubric":"Дорого / дёшево","theme":"Creed Aventus → Armaf Club de Nuit Intense Man"},{"date":"15","rubric":"Нота месяца","theme":"Табак"},{"date":"19","rubric":"Обзор аромата","theme":"Diptyque Tam Dao"},{"date":"22","rubric":"Гардероб","theme":"Осенний гардероб: 3 аромата, которых хватит"},{"date":"26","rubric":"Подборка под задачу","theme":"Нишевые, которые реально стоят своих денег"},{"date":"29","rubric":"Обзор аромата","theme":"Chanel Sycomore"}]},"2026-11":{"title":"Ноябрь 2026","posts":[{"date":"1","rubric":"Новинки месяца","theme":"Гурманика и ваниль"},{"date":"4","rubric":"Обзор аромата","theme":"Giardini di Toscana Bianco Latte"},{"date":"7","rubric":"Парфюмерный дом","theme":"Xerjoff"},{"date":"10","rubric":"Дорого / дёшево","theme":"Tom Ford Lost Cherry → Zara Cherry Smoothie"},{"date":"13","rubric":"Нота месяца","theme":"Ваниль"},{"date":"16","rubric":"Обзор аромата","theme":"Kayali Vanilla 28"},{"date":"19","rubric":"Слоение","theme":"Что такое слоение и базовые правила"},{"date":"23","rubric":"Подборка под задачу","theme":"5 ароматов до 5000₽, которые не пахнут дёшево"},{"date":"26","rubric":"Обзор аромата","theme":"Nishane Ani"},{"date":"30","rubric":"Интересный факт","theme":"Сколько нот человек реально различает"}]},"2026-12":{"title":"Декабрь 2026","posts":[{"date":"1","rubric":"Новинки месяца","theme":"Праздничные лимитки"},{"date":"4","rubric":"Обзор аромата","theme":"Kilian Apple Brandy"},{"date":"7","rubric":"История","theme":"Парфюмерия при дворе Людовика XIV"},{"date":"10","rubric":"Дорого / дёшево","theme":"MFK Grand Soir → Lattafa Khamrah"},{"date":"14","rubric":"Нота месяца","theme":"Корица"},{"date":"17","rubric":"Обзор аромата","theme":"YSL Babycat"},{"date":"21","rubric":"Практический гид","theme":"Как выбрать аромат в подарок"},{"date":"24","rubric":"Подборка под задачу","theme":"Что подарить на Новый год — по бюджетам"},{"date":"28","rubric":"Обзор аромата","theme":"Tom Ford Tobacco Vanille"},{"date":"31","rubric":"Интересный факт","theme":"Почему зимой ароматы звучат тише"}]},"2027-01":{"title":"Январь 2027","posts":[{"date":"1","rubric":"Новинки месяца","theme":"Парфюмерный старт 2027"},{"date":"4","rubric":"Обзор аромата","theme":"Tiziana Terenzi Cassiopea"},{"date":"7","rubric":"Парфюмерный дом","theme":"Amouage"},{"date":"11","rubric":"Дорого / дёшево","theme":"Le Labo Santal 33 → бюджетные сандаловые аналоги"},{"date":"14","rubric":"Нота месяца","theme":"Миндаль"},{"date":"18","rubric":"Обзор аромата","theme":"Hermès Barénia Intense"},{"date":"21","rubric":"Гардероб","theme":"Базовый гардероб из 3 ароматов"},{"date":"25","rubric":"Подборка под задачу","theme":"Ароматы для собеседования и офиса"},{"date":"28","rubric":"Обзор аромата","theme":"Parfums de Marly Layton"}]},"2027-02":{"title":"Февраль 2027","posts":[{"date":"1","rubric":"Новинки месяца","theme":"Инновации и необычные форматы"},{"date":"4","rubric":"Обзор аромата","theme":"Giorgio Armani Sì Passione Red Musk"},{"date":"8","rubric":"Дорого / дёшево","theme":"Chanel Coco Mademoiselle → Zara Black Amber"},{"date":"11","rubric":"Нота месяца","theme":"Вишня"},{"date":"15","rubric":"Обзор аромата","theme":"Givenchy Irresistible Nectar"},{"date":"18","rubric":"Слоение","theme":"5 проверенных сочетаний, которые работают"},{"date":"22","rubric":"Подборка под задачу","theme":"Ароматы для свидания"},{"date":"25","rubric":"Обзор аромата","theme":"Tiziana Terenzi White Fire"}]},"2027-03":{"title":"Март 2027","posts":[{"date":"1","rubric":"Новинки месяца","theme":"Весенние цветочные релизы"},{"date":"4","rubric":"Обзор аромата","theme":"Lacoste L.12.12 Silver Rose"},{"date":"8","rubric":"Парфюмерный дом","theme":"Le Labo"},{"date":"11","rubric":"Дорого / дёшево","theme":"Byredo Gypsy Water → Zara Nomade"},{"date":"15","rubric":"Нота месяца","theme":"Фиалка"},{"date":"18","rubric":"Обзор аромата","theme":"Tiziana Terenzi Afrodite"},{"date":"22","rubric":"Практический гид","theme":"Как читать пирамиду нот (и почему она врёт)"},{"date":"25","rubric":"Подборка под задачу","theme":"Весенний гардероб под настроение"},{"date":"29","rubric":"Обзор аромата","theme":"Marc-Antoine Barrois Ganymède"}]},"2027-04":{"title":"Апрель 2027","posts":[{"date":"1","rubric":"Новинки месяца","theme":"Зелёные и акватические ароматы"},{"date":"5","rubric":"Обзор аромата","theme":"Mugler Aura"},{"date":"8","rubric":"История","theme":"Vent Vert Balmain (1947) — как родился «зелёный» аромат"},{"date":"12","rubric":"Дорого / дёшево","theme":"Dior Sauvage → Lattafa Asad"},{"date":"15","rubric":"Нота месяца","theme":"Зелёный чай"},{"date":"19","rubric":"Обзор аромата","theme":"Atelier Cologne Pomélo Paradis"},{"date":"22","rubric":"Гардероб","theme":"Гардероб путешественника — что брать в отпуск"},{"date":"26","rubric":"Подборка под задачу","theme":"Для тех, кто ненавидит сладкое"},{"date":"29","rubric":"Обзор аромата","theme":"Issey Miyake L'Eau d'Issey"}]}},"reserve":{"note":"Вытеснено сокращением обзоров с 5 до 3 и чередованием История/Дом. Вернуть при продлении цикла или если формат зайдёт.","ароматы":["Tom Ford Soleil Blanc","Aerin Iris Meadow","Aerin Tangier Vanille","Byredo Super Cedar","Goutal Encens Flamboyant","Goutal Le Mimosa","Kilian Angels' Share","Zarkoperfume Cloud Collection","Xerjoff Naxos","Initio Oud for Greatness","Dior Addict","Armaf Club de Nuit Maleka","Maison Crivelli Tubéreuse Astrale","YSL Y EDP","Roberto Cavalli Just Cavalli Give Me Magic for Her","Diptyque Eau Rose","Davidoff Cool Water","Hermès Eau d'Orange Verte","Atelier Cologne Clémentine California"],"дома":["Penhaligon's","Jo Malone","Kilian Paris","Frederic Malle","Parfums de Marly"],"истории":["Мюглер и Angel: рождение гурманики","Как нишевая парфюмерия стала мейнстримом","Альдегиды: случайность, изменившая индустрию","История дома Guerlain через 5 поколений"],"факты":["Сколько лет учится парфюмер и почему в мире их всего ~500","Почему мускус раньше был запрещён","Сколько нот человек реально различает","Правда ли, что блоттеры искажают аромат","Почему ваниль почти всем нравится","Как парфюм влияет на память","Самые странные ноты в истории"]},"cadence":"Каждые 3 дня, воскресенья пропускаем (сдвиг на понедельник). ИСКЛЮЧЕНИЕ: «Новинки месяца» всегда 1-го числа, даже если это воскресенье."}
+</script>
+
+<div class="wrap">
+  <header class="masthead">
+    <p class="eyebrow">Telegram · @notes_aroma · контент-план</p>
+    <h1>Тетрадь<br><em>Aroma Notes</em></h1>
+    <p class="standfirst">
+      Год публикаций — от ландыша в мае 2026 до зелёного чая в апреле 2027. Ритм: каждые три дня,
+      воскресенья сдвигаются на понедельник. «Новинки месяца» держатся первого числа при любом дне недели.
+    </p>
+    <dl class="facts" id="facts"></dl>
+  </header>
+
+  <section class="shift">
+    <div>
+      <h2>Разворот к пользе</h2>
+      <p>
+        Половина месяца уходила на обзоры: «вот аромат, вот ноты». С сентября обзоров три, а освободившиеся
+        слоты забрали рубрики, за которыми возвращаются — аналоги дорогих ароматов, гардероб, слоение, подборки под задачу.
+      </p>
+    </div>
+    <div>
+      <div class="bars" id="bars"></div>
+      <div class="legend">
+        <span><i class="swatch" style="background:var(--anchor)"></i>Новинки месяца</span>
+        <span><i class="swatch" style="background:var(--iris)"></i>Обзор аромата</span>
+        <span><i class="swatch" style="background:var(--vetiver)"></i>Познавательное</span>
+        <span><i class="swatch" style="background:var(--amber)"></i>Полезное</span>
+      </div>
+    </div>
+  </section>
+</div>
+
+<nav class="rail" aria-label="Месяцы">
+  <div class="rail-inner" id="rail"></div>
+</nav>
+
+<div class="wrap">
+  <div class="months" id="months"></div>
+
+  <section class="reserve">
+    <h2>Полка запаса</h2>
+    <p id="reserve-note"></p>
+    <div class="shelf" id="shelf"></div>
+  </section>
+
+  <footer class="colophon">
+    <span id="colo-count"></span>
+    <span id="colo-period"></span>
+    <span>Обновлено 3 сентября 2026</span>
+  </footer>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var data = JSON.parse(document.getElementById("plan-data").textContent);
+
+  var GROUP = {
+    "Новинки месяца": "anchor",
+    "Обзор аромата": "review",
+    "История": "know",
+    "Парфюмерный дом": "know",
+    "Нота месяца": "know",
+    "Интересный факт": "know",
+    "Дорого / дёшево": "useful",
+    "Практический гид": "useful",
+    "Гардероб": "useful",
+    "Слоение": "useful",
+    "Подборка под задачу": "useful"
+  };
+  var NEW_RUBRICS = {
+    "Дорого / дёшево": 1, "Практический гид": 1, "Гардероб": 1,
+    "Слоение": 1, "Подборка под задачу": 1
+  };
+  var DOW = ["вс", "пн", "вт", "ср", "чт", "пт", "сб"];
+  var SHORT = {
+    "Новинки месяца": "новинки", "Обзор аромата": "обзор", "История": "история",
+    "Парфюмерный дом": "дом", "Нота месяца": "нота", "Интересный факт": "факт",
+    "Дорого / дёшево": "дорого / дёшево", "Практический гид": "гид",
+    "Гардероб": "гардероб", "Слоение": "слоение", "Подборка под задачу": "подборка"
+  };
+
+  var today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  var keys = Object.keys(data.months).sort();
+
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+
+  function dateOf(key, day) {
+    return new Date(+key.slice(0, 4), +key.slice(5, 7) - 1, +day);
+  }
+
+  /* ---- masthead figures ---- */
+
+  var totalPosts = 0, totalReviews = 0, totalUseful = 0;
+  keys.forEach(function (k) {
+    data.months[k].posts.forEach(function (p) {
+      totalPosts++;
+      if (GROUP[p.rubric] === "review") totalReviews++;
+      if (GROUP[p.rubric] === "useful") totalUseful++;
+    });
+  });
+
+  var facts = [
+    ["Публикаций", String(totalPosts)],
+    ["Месяцев", String(keys.length)],
+    ["Обзоров", String(totalReviews)],
+    ["Полезных", String(totalUseful)],
+    ["В запасе", String(
+      data.reserve["ароматы"].length + data.reserve["дома"].length +
+      data.reserve["истории"].length + data.reserve["факты"].length
+    )]
+  ];
+  var dl = document.getElementById("facts");
+  facts.forEach(function (f) {
+    var d = el("div", "fact");
+    d.appendChild(el("dt", null, f[0]));
+    d.appendChild(el("dd", null, f[1]));
+    dl.appendChild(d);
+  });
+
+  /* ---- rebalance bars: July 2026 (old cadence) vs October 2026 (new) ---- */
+
+  function mixOf(key) {
+    var m = { anchor: 0, review: 0, know: 0, useful: 0 };
+    data.months[key].posts.forEach(function (p) { m[GROUP[p.rubric]]++; });
+    return m;
+  }
+
+  var barsBox = document.getElementById("bars");
+  [
+    { key: "2026-07", label: "Июль — прежний ритм" },
+    { key: "2026-10", label: "Октябрь — новый ритм" }
+  ].forEach(function (row) {
+    var mix = mixOf(row.key);
+    var total = mix.anchor + mix.review + mix.know + mix.useful;
+
+    var wrap = el("div", "bar-row");
+    var head = el("div", "bar-head");
+    head.appendChild(el("span", null, row.label));
+    var right = el("b", null,
+      total + " постов · обзоров " + mix.review + " · пользы " + mix.useful);
+    head.appendChild(right);
+    wrap.appendChild(head);
+
+    var bar = el("div", "bar");
+    [["anchor", mix.anchor], ["review", mix.review], ["know", mix.know], ["useful", mix.useful]]
+      .forEach(function (pair) {
+        if (!pair[1]) return;
+        var s = el("div", "seg seg-" + pair[0], String(pair[1]));
+        s.style.flex = pair[1] + " 1 0";
+        s.title = pair[1] + " из " + total;
+        bar.appendChild(s);
+      });
+    wrap.appendChild(bar);
+    barsBox.appendChild(wrap);
+  });
+
+  /* ---- month rail + month cards ---- */
+
+  var rail = document.getElementById("rail");
+  var monthsBox = document.getElementById("months");
+  var currentKey = String(today.getFullYear()) + "-" +
+    String(today.getMonth() + 1).padStart(2, "0");
+
+  keys.forEach(function (key) {
+    var m = data.months[key];
+    var last = m.posts[m.posts.length - 1];
+    var monthOver = dateOf(key, last.date) < today;
+    var isCurrent = key === currentKey;
+
+    var link = el("a", monthOver ? "done" : (isCurrent ? "now" : ""), m.title.replace(" 20", " ’"));
+    link.href = "#m" + key;
+    rail.appendChild(link);
+
+    var card = el("section", "month" + (monthOver ? " past" : "") + (isCurrent ? " current" : ""));
+    card.id = "m" + key;
+
+    var head = el("div", "month-head");
+    head.appendChild(el("h3", null, m.title));
+    var counts = { review: 0, useful: 0 };
+    m.posts.forEach(function (p) {
+      var g = GROUP[p.rubric];
+      if (counts[g] != null) counts[g]++;
+    });
+    head.appendChild(el("span", "month-meta",
+      m.posts.length + " · обзоров " + counts.review + " · пользы " + counts.useful));
+    card.appendChild(head);
+
+    var ul = el("ul", "posts");
+    m.posts.forEach(function (p) {
+      var d = dateOf(key, p.date);
+      var done = d < today;
+      var li = el("li", "post" + (done ? " done" : ""));
+
+      var when = el("div", "when");
+      when.appendChild(el("span", null, p.date));
+      var dowIdx = d.getDay();
+      when.appendChild(el("span", "dow" + (dowIdx === 0 ? " sun" : ""), DOW[dowIdx]));
+      li.appendChild(when);
+
+      var cell = el("div", "body-cell");
+      cell.appendChild(el("span", "tag tag-" + GROUP[p.rubric], SHORT[p.rubric] || p.rubric));
+      var th = el("div", "theme");
+      th.appendChild(document.createTextNode(p.theme));
+      if (NEW_RUBRICS[p.rubric]) th.appendChild(el("span", "new-flag", "NEW"));
+      cell.appendChild(th);
+      li.appendChild(cell);
+
+      ul.appendChild(li);
+    });
+    card.appendChild(ul);
+    monthsBox.appendChild(card);
+  });
+
+  /* ---- reserve shelf ---- */
+
+  document.getElementById("reserve-note").textContent = data.reserve.note;
+  var shelf = document.getElementById("shelf");
+  [
+    ["Ароматы", "ароматы"],
+    ["Парфюмерные дома", "дома"],
+    ["Истории", "истории"],
+    ["Интересные факты", "факты"]
+  ].forEach(function (pair) {
+    var items = data.reserve[pair[1]];
+    var sec = el("section");
+    var h = el("h4");
+    h.appendChild(document.createTextNode(pair[0]));
+    h.appendChild(el("b", null, String(items.length)));
+    sec.appendChild(h);
+    var ul = el("ul");
+    items.forEach(function (t) { ul.appendChild(el("li", null, t)); });
+    sec.appendChild(ul);
+    shelf.appendChild(sec);
+  });
+
+  /* ---- colophon ---- */
+
+  document.getElementById("colo-count").textContent = totalPosts + " публикаций";
+  document.getElementById("colo-period").textContent =
+    data.months[keys[0]].title + " — " + data.months[keys[keys.length - 1]].title;
+})();
+</script>
